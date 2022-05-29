@@ -1,4 +1,4 @@
-namespace TeamWebApi;
+namespace BlazorApp.Data;
 
 public class WeatherForecast
 {

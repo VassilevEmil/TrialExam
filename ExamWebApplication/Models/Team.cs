@@ -4,7 +4,7 @@ namespace ExamWebApplication.Models;
 
 public class Team
 {
-    private ICollection<Player> players;
+    public ICollection<Player> Players;
     
     [Key]
     public string TeamName { get; set; }
@@ -12,4 +12,9 @@ public class Team
     [Required, MaxLength(50)]
     public string NameOfCoach { get; set; }
     public int Ranking { get; set; }
+
+    public Team()
+    {
+        Players = new List<Player>();
+    }
 }
